@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Merriweather&family=Montserrat&family=Poppins:wght@400;500&family=Sacramento&family=Space+Mono:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Merriweather&family=Montserrat&family=Poppins:wght@400;500&family=Sacramento&family=Space+Mono:ital@1&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    border: 5px solid brown;
+    
+}
+
+.upper{
+  font-family: "Montserrat", "Poppins", sans-serif;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  padding-left: 200px;
+  background-color: #c2c5aa;
+}
+.wraper{
+  display: inline-flex;
+  align-items: center;
+}
+
+.wraper .static{
+  color: #7f4f24;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.wraper .dynamic{
+  margin-left: 5px;
+  padding-left: 5px ;
+  line-height: 40px;
+  height: 40px;
+  overflow: hidden;
+}
+.li-2{
+  margin-top: 14px;
+}
+.dynamic li {
+  color: #582f0e;
+  list-style: none;
+  font-size: 50px;
+  font-weight: 900;
+  position: relative;
+  top: 0;
+  animation: slide 3s steps(2) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -113px;
+  }
+}
+
+.dynamic li span{
+  position: relative;
+}
+
+.dynamic li span::after{
+  content: " ";
+  border-left: 2px solid #f94949;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color:#c2c5aa;
+  animation: typing 1.5s steps(8) infinite;
+}
+@keyframes typing {
+  100%{
+    left: 100%;
+    margin: 0 -30px 0 25px;
+  }
+}
+.main-img{
+    width: 24%; 
+    aspect-ratio: 4/4;
+    display: flex;
+    box-shadow: 0 0 20px aquamarine;
+}
+.container{
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    top: 167px;
+    right: 46px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.slogan{
+  font-family: "Merriweather",sans-serif;
+  font-size: 35px;
+  width: 65%;
+  padding-top: 120px;
+  padding-bottom: 50px;
+  margin-left: 170px;
+  margin-top: 40px;
+  line-height: 35px;
+  color: transparent;
+  -webkit-text-stroke: 1px #f94949;
+  background: url(back1.png);
+  -webkit-background-clip: text;
+  background-position: center;
+  animation: back 10s linear infinite;
+}
+
+@keyframes back{
+  100%{
+    background-position: 2000px 80px ;
+  }
+}
+
+h2{
+  padding-left:70px ;
+  text-shadow: 2px 4px #f94949;
+  font-size: 30px;
+}
+
+
+p{
+  width: 70%;
+  padding-left: 40px;
+  font-family:"Merriweather",sans-serif ;
+}
+
+.military p{
+  width: 90%;
+}
+
+.second{
+  margin: -60px 0 0 0;
+  padding: 0;
+  padding-bottom: 105px;
+  background-color: black;
+}
+
+.third{
+  background-image: url("tr-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-top: 0;
+  padding-bottom: 20px;
+}
+
+.intro,.early,.military {
+  padding: 30px 0px;
+}
+ 
+.tanaji1{
+  display: flex;
+  justify-content: end;
+}
+
+.img-container{
+  margin-bottom: 0;
+  padding-bottom: 0;
+  display: inline-flex;
+  width: 97%;
+  height: 300px;
+  justify-content: center;
+}
+.fifth{
+  background-image: url("tr-bg.jpg");
+  /* background-color:#582f0e; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-size: 100%; */
+  /* padding-top: 0; */
+  padding-bottom: 60px;
+  margin: -27px 0 0 0;
+}
+
+.battle{
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.fifth h2{
+  text-shadow: 2px 4px #f94949;
+  font-size: 30px;
+  padding: 20px 0 20px 70px;
+}
+.conclusion h2{
+  text-shadow: 2px 4px #582f0e;
+  font-size: 40px;
+}
