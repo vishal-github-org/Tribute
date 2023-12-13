@@ -167,11 +167,8 @@ p{
 }
 .fifth{
   background-image: url("tr-bg.jpg");
-  /* background-color:#582f0e; */
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-size: 100%; */
-  /* padding-top: 0; */
   padding-bottom: 60px;
   margin: -27px 0 0 0;
 }
@@ -187,6 +184,16 @@ p{
   padding: 20px 0 20px 70px;
 }
 .conclusion h2{
+  display: flex;
+  justify-content: center;
   text-shadow: 2px 4px #582f0e;
   font-size: 40px;
+}
+
+.conclusion p{
+  text-shadow: 1px 1px #7f4f24;
+}
+
+.jagdamb{
+  float: right;
 }
