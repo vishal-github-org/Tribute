@@ -79,7 +79,7 @@ body{
   }
 }
 .main-img{
-    width: 24%; 
+    width: 20%; 
     aspect-ratio: 4/4;
     display: flex;
     box-shadow: 0 0 20px aquamarine;
