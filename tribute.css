@@ -197,3 +197,99 @@ p{
 .jagdamb{
   float: right;
 }
+
+/* Add these styles at the end of your existing CSS */
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+  .upper {
+    padding-left: 20px;
+    text-align: center;
+  }
+
+  .slogan {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 0;
+    font-size: 25px;
+  }
+
+  .main-img {
+    width: 60%;
+  }
+
+  .container {
+    top: auto;
+    right: auto;
+    bottom: 10px;
+    left: 10px;
+    justify-content: center;
+  }
+
+  p {
+    width: 90%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .intro,
+  .early,
+  .military {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .img-container {
+    width: 100%;
+    overflow-x: auto;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .wraper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dynamic {
+    text-align: center;
+    padding-left: 0;
+    margin-top: 10px;
+  }
+
+  .dynamic li {
+    font-size: 40px;
+  }
+
+  .slogan {
+    font-size: 20px;
+  }
+
+  .container {
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+  }
+
+  .intro,
+  .early,
+  .military,
+  .battle,
+  .night,
+  .victory,
+  .conclusion {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .fifth h2 {
+    font-size: 25px;
+  }
+
+  .conclusion h2 {
+    font-size: 30px;
+  }
+}
