@@ -239,10 +239,10 @@ p{
   }
 
   .main-img {
-    width: 40%;
+    width: 50%;
     position: relative;
-    bottom: 150px;
-    left: 160px;
+    bottom: 180px;
+    left: 110px;
   }
 
   .container {
