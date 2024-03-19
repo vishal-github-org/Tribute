@@ -201,21 +201,48 @@ p{
 /* Add these styles at the end of your existing CSS */
 
 /* Media queries for responsiveness */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 540px) {
   .upper {
     padding-left: 20px;
-    text-align: center;
+    text-align:center;
+  }
+  
+  .dynamic li span{
+    position: relative;
+    right: 40px;
+    padding-left: 40px;
+  }
+  
+  .dynamic li span::after{
+    content: " ";
+    border-left: 2px solid #f94949;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color:#c2c5aa;
+    animation: typing 1.5s steps(8) infinite;
+  }
+  @keyframes typing {
+    100%{
+      left: 100%;
+      margin: 0 -30px 0 25px;
+    }
   }
 
+
   .slogan {
-    padding-left: 20px;
+    padding-left: 10px;
     padding-right: 20px;
     margin-left: 0;
     font-size: 25px;
   }
 
   .main-img {
-    width: 60%;
+    width: 40%;
+    position: relative;
+    bottom: 150px;
+    left: 160px;
   }
 
   .container {
