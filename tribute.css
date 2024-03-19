@@ -158,10 +158,10 @@ p{
 }
 
 .img-container{
-  margin-bottom: 0;
-  padding-bottom: 0;
-  display: inline-flex;
-  width: 97%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 95%;
   height: 300px;
   justify-content: center;
 }
@@ -198,10 +198,13 @@ p{
   float: right;
 }
 
-/* Add these styles at the end of your existing CSS */
 
-/* Media queries for responsiveness */
 @media only screen and (max-width: 540px) {
+body{
+  margin: 0;
+  padding: 0;
+}
+
   .upper {
     padding-left: 20px;
     text-align:center;
@@ -239,9 +242,10 @@ p{
   }
 
   .main-img {
-    width: 50%;
+    width: 45%;
     position: relative;
-    bottom: 180px;
+    bottom: 300px;
+    margin-right: 7px;
     left: 110px;
   }
 
@@ -259,19 +263,90 @@ p{
     padding-right: 20px;
   }
 
-  .intro,
-  .early,
-  .military {
-    padding-left: 20px;
-    padding-right: 20px;
+  .third{
+    display: flex;
+    flex-direction: column;
+    background-image: url("tr-bg.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding-top: 0;
+    padding-bottom: 20px;
+  }
+
+  .intro h2{
+    font-size: 35px;
+    padding-bottom: 20px;
+    width: 80%;
+    position: relative;
+    right: 40px;
+  }
+
+ 
+  .intro{
+    align-items: center;
+    position: relative;
+    left: 250px;
+  }
+
+  .early h2{
+    width: 80%;
+    padding-bottom: 20px;
+    position: relative;
+    right: 60px;
+  }
+ 
+
+  .early{
+    padding-top: 460px;
+    position: relative; 
+    right: 50px;
+    width: 80%;
+
+  }
+
+  .military h2{
+      width: 80%;
+      padding-bottom: 20px;
+      position: relative;
+      right: 40px;
   }
 
   .img-container {
     width: 100%;
-    overflow-x: auto;
-    justify-content: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 190px;
+  }
+
+  .battle h2{
+    width: 80%;
+      padding-bottom: 20px;
+      position: relative;
+      right: 40px;
+  }
+
+  .battle{
+    margin-top: 240px;
+  }
+
+  .night h2{
+    width: 80%;
+      padding-bottom: 20px;
+      position: relative;
+      right: 40px;
+  }
+
+  .jagdamb{
+    padding-top: 30px;
+    position: relative;
+    left: 40px;
+  }
+
+  .conclusion h2{
+    width: 80%;
+    padding-bottom: 20px;
+    position: relative;
+    right: 40px;
   }
 }
 
